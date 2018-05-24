@@ -1,0 +1,43 @@
+.container {
+    padding: 2px 2px 2px 2rem;
+    overflow: hidden;
+    max-height: 10rem;
+    background-color: white;
+}
+.header {
+    overflow-wrap: break-word;
+}
+.container:hover {
+    background-color: #f5f8fa;
+}
+.avatar {
+     margin-left: -2rem;
+     border-radius: 50%;
+     width: 2rem;
+     height: 2rem;
+     float: left;
+}
+
+.email {
+    font-weight: bold;
+}
+
+.date {
+    color: #657786;
+}
+.date::before {
+    content: '·';
+}
+
+.toolbar_container {
+    float: right;
+}
+
+.content {
+    white-space: pre-wrap;
+}
+
+.content_prefix {
+    font-weight: bold;
+    color: #54a3d8;
+}
