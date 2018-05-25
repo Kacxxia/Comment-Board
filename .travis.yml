@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - node
+env:
+  - BABEL_ENV=production NODE_ENV=production
+git:
+  depth: 1
+branches:
+  only:
+    - master
+install:
+  - npm install
+cache:
+  directories:
+    - node_modules
+before_deploy:
+  - npm run build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $myToken
+  on:
+    branch: master
+  target-branch: master
+
+
